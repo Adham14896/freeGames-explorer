@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="bootstrap.min.css" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Game Explorer</title>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <a class="navbar-brand d-flex align-items-center w-25" href="#">
+            <img src="nav-logo.png" class="logo" alt="logo" />
+            <h1 class="h3 text-white">Game Reviews</h1></a
+          >
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse d-flex justify-content-end pe-3"
+            id="navbarNav"
+          >
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" data-category="mmorpg">MMORPG</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-category="shooter">SHOOTER</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-category="sailing">SAILING</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-category="permadeath">PERMADEATH</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-category="superhero">SUPERHERO</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-category="pixel">PIXEL</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <div class="container my-3 py2">
+        <div
+          id="rowData"
+          class="row gy-4 d-flex justify-content-center align-items-center vh-100"
+        >
+          <div class="loader"></div>
+        </div>
+      </div>
+    </main>
+    <!-- <div id="gameModal" class="modal d-none container">
+        <div class="modal-content">
+          <button type="button" id="closeBtn" class="close close-modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+      </div>
+    </div> -->
+    <script src="bootstrap.bundle.min.js"></script>
+    <script type="module" src="index.js"></script>
+  </body>
+</html>

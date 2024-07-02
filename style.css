@@ -1,0 +1,100 @@
+body {
+  background-color: #32353a;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.navbar {
+  background-color: #3a497b;
+}
+
+.nav-link {
+  cursor: pointer;
+  transition: color 0.3s;
+  color: #fff;
+}
+
+.active {
+  color: #0d6efd;
+}
+
+a:hover {
+  color: #0d6efd;
+}
+
+.logo {
+  width: 50px;
+  height: 50px;
+}
+
+.genre,
+.platform {
+  background-color: #32383e;
+  padding: 0.5rem;
+  border-radius: 7px;
+}
+
+.free {
+  background-color: #3a497b;
+  padding: 0.6rem;
+  border-radius: 7px;
+  transition: all 0.5s;
+}
+
+.card {
+  overflow: hidden;
+  transition: all 0.5s;
+}
+
+img.game-img {
+  filter: grayscale(80%);
+  transition: all 0.5s;
+}
+
+.card:hover {
+  transform: scale(1.06);
+}
+
+.card:hover .game-img {
+  filter: none;
+}
+
+.show-game {
+  padding: 0.5rem;
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  border: 0.3px solid #ffc107;
+  border-radius: 8px;
+  transition: all 0.3s;
+  margin: auto;
+  width: 10%;
+}
+
+.show-game:hover {
+  background-color: #ffc107;
+  border: none;
+}
+
+.card {
+  cursor: pointer;
+}
+
+.card:hover .free {
+  background-color: #0d6efd;
+}
+
+/* HTML: <div class="loader"></div> */
+.loader {
+  width: 50px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  border: 8px solid lightblue;
+  border-right-color: #3a497b;
+  animation: l2 1s infinite linear;
+}
+@keyframes l2 {
+  to {
+    transform: rotate(1turn);
+  }
+}
